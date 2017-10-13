@@ -14,5 +14,7 @@ func (loc1 Location) DistanceTo(loc2 Location) float {
 	return math.Sqrt(deltaX * deltaX + deltaY * deltaY)
 }
 
-
+func (loc Location) Rename(newName string) {
+  loc.name = newName
+}
 
